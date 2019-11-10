@@ -26,7 +26,8 @@ Esto lo que va hacer es:
 {"pokedex": "#758", "name": "Salazzle", "type": "Poison/Fire", "sprite": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/small/salazzle.jpg"}
 ]
 ```
-Estos datos los mostraremos en una plantilla HTML (template.html). Para obtener los datos del archivo JSON y mostrarlos en la plantilla se ha utilizado [getJSON() de la libreria JQuery](https://api.jquery.com/jQuery.getJSON/).
+Estos datos los mostraremos en una plantilla HTML (template.html). 
+Para obtener los datos del archivo JSON y mostrarlos en la plantilla, se ha utilizado [getJSON() de la libreria JQuery](https://api.jquery.com/jQuery.getJSON/).
 
 ## Resultado <img src="https://image.flaticon.com/icons/svg/2285/2285663.svg" alt="Explanation Icon" height="40" width="40"> 
 El resultado es una tabla con nuestro equipo Pokémon:
@@ -34,8 +35,8 @@ El resultado es una tabla con nuestro equipo Pokémon:
 
 ## Requisitos <img src="https://image.flaticon.com/icons/svg/2132/2132377.svg" alt="Explanation Icon" height="40" width="40"> 
 
-### Lenguaje de programación
-Para realizar este reto se ha utilizado:
+### Tecnologías
+Para desarrollar este reto, se ha utilizado:
 - Python 3.6.8 [JetBrains PyCharm](https://www.jetbrains.com/pycharm/)
 - [Scrapy 1.8.0](https://scrapy.org/)
 - HTML + CSS
