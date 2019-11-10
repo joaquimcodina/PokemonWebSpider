@@ -30,7 +30,7 @@ Estos datos los mostraremos en una plantilla HTML (template.html). Para obtener 
 
 ## Resultado
 El resultado es una tabla con nuestro equipo Pokémon:
-![ScreenShot](https://drive.google.com/file/d/1xgOvPcGCJOR9FGkHMYXw7AXWbi5PsznG/view?usp=sharing)
+![Preview](images/result.png)
 
 ## Requisitos <img src="https://image.flaticon.com/icons/svg/2132/2132377.svg" alt="Explanation Icon" height="40" width="40"> 
 
