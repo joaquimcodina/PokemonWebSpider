@@ -9,11 +9,11 @@ Abrimos un terminal dentro de nuestro proyecto PokemonWebSpider, y ejecutamos el
 ```
   scrapy crawl pokemonteam --nolog -o data.json
 ```
-En el caso de que queramos sobreescribir los datos del fichero JSON, ejecutamos el siguiente comando:
+En el caso de que queramos sobrescribir los datos del fichero JSON, ejecutamos el siguiente comando:
 ```
   rm data.json; scrapy crawl pokemonteam --nolog -o data.json
 ```
-Esto lo que va hacer es:
+Esto lo que va a hacer es:
 - Obtener los datos desde [PokemonDB](https://pokemondb.net/).
 - Exportar el resultado en un archivo JSON.
 ```
