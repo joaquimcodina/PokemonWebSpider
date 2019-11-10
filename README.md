@@ -14,8 +14,8 @@ En el caso de que queramos sobreescribir los datos del fichero JSON, ejecutamos 
   rm data.json; scrapy crawl pokemonteam --nolog -o data.json
 ```
 Esto lo que va hacer es:
-- 1) Obtener los datos desde [PokemonDB](https://pokemondb.net/).
-- 2) Exportar el resultado en un archivo JSON.
+- Obtener los datos desde [PokemonDB](https://pokemondb.net/).
+- Exportar el resultado en un archivo JSON.
 ```
   [
 {"pokedex": "#043", "name": "Oddish", "type": "Grass/Poison", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/oddish.png"},
@@ -30,7 +30,7 @@ Estos datos los mostraremos en una plantilla HTML (template.html). Para obtener 
 
 ## Resultado
 El resultado es una tabla con nuestro equipo Pokémon:
-![image](https://drive.google.com/file/d/1xgOvPcGCJOR9FGkHMYXw7AXWbi5PsznG/view?usp=sharing)
+![ScreenShot](https://drive.google.com/file/d/1xgOvPcGCJOR9FGkHMYXw7AXWbi5PsznG/view?usp=sharing)
 
 ## Requisitos <img src="https://image.flaticon.com/icons/svg/2132/2132377.svg" alt="Explanation Icon" height="40" width="40"> 
 
