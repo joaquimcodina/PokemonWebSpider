@@ -46,3 +46,16 @@ class PokemonTeam(scrapy.Spider):
 
         print("My Team")
         print(namePokemons)
+        for pokedex, name, lenType, sprite in zip(pokedex, name, lenType, sprite):
+            item = Pokemon()
+            if name.strip() in namePokemons:
+                listTypes = lenType.split(" · ")
+                textType = html2text.html2text(listTypes[0]+""+listTypes[1])
+                currentType = re.findall(r"[\w']+", textType)
+
+                item["pokedex"] = pokedex.strip()
+                item["name"] = name.strip()
+                item["type"] = currentType[0]+"/"+currentType[3]
+                item["sprite"] = sprite.strip()
+                items.append(item)
+        return items
