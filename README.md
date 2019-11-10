@@ -17,7 +17,7 @@ Esto lo que va hacer es:
 - Obtener los datos desde [PokemonDB](https://pokemondb.net/).
 - Exportar el resultado en un archivo JSON.
 ```
-  [
+[
 {"pokedex": "#043", "name": "Oddish", "type": "Grass/Poison", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/oddish.png"},
 {"pokedex": "#227", "name": "Skarmory", "type": "Steel/Flying", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/skarmory.png"},
 {"pokedex": "#228", "name": "Houndour", "type": "Dark/Fire", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/houndour.png"},
@@ -26,9 +26,9 @@ Esto lo que va hacer es:
 {"pokedex": "#758", "name": "Salazzle", "type": "Poison/Fire", "sprite": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/small/salazzle.jpg"}
 ]
 ```
-Estos datos los mostraremos en una plantilla HTML (template.html). Para obtener los datos de JSON y mostrarlos en la plantilla se ha utilizado [getJSON() de la libreria JQuery](https://api.jquery.com/jQuery.getJSON/).
+Estos datos los mostraremos en una plantilla HTML (template.html). Para obtener los datos del archivo JSON y mostrarlos en la plantilla se ha utilizado [getJSON() de la libreria JQuery](https://api.jquery.com/jQuery.getJSON/).
 
-## Resultado
+## Resultado <img src="https://image.flaticon.com/icons/svg/2285/2285663.svg" alt="Explanation Icon" height="40" width="40"> 
 El resultado es una tabla con nuestro equipo Pokémon:
 ![Preview](images/result.png)
 
@@ -45,5 +45,5 @@ Para realizar este reto se ha utilizado:
 ### Sistema operativo
 Durante el reto se ha utilizado Ubuntu 18.04.3 (64 bits).
 
-## Información
+## Información <img src="https://image.flaticon.com/icons/svg/1373/1373283.svg" alt="Explanation Icon" height="40" width="40"> 
 - Group name: [Joaquim Codina](https://github.com/joaquimcodina)
