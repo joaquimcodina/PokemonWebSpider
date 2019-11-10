@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Web Spider | Joaquim Codina</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
+    <style>
+        #title{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #pokemon_template {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #pokemon_template td, #pokemon_template th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #pokemon_template tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        #pokemon_template th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2><img src="images/title.png" id="title" alt="sprite"></h2>
+        <table class="table" id="pokemon_template">
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            var pokemon_data = '';
+            $.getJSON("data.json", function (data) {
+                pokemon_data = '<thead class="thead-dark">' +
+                    '                <tr>\n' +
+                    '                    <th scope="col">Pokedex</th>' +
+                    '                    <th scope="col">Name</th>' +
+                    '                    <th scope="col">Type</th>' +
+                    '                    <th scope="col">Sprite</th>' +
+                    '                </tr>' +
+                    '            </thead>';
+                $.each(data, function (key, value) {
+                    pokemon_data += '<tr>';
+                    pokemon_data += '   <th scope="row">'+value.pokedex+'</th>';
+                    pokemon_data += '   <td>'+value.name+'</td>';
+                    pokemon_data += '   <td>'+value.type+'</td>';
+                    pokemon_data += '   <td><img src="'+value.sprite+'" alt="sprite"></td>';
+                    pokemon_data += '</tr>';
+                });
+                pokemon_data += '<tbody>\n' +
+                                '</tbody>';
+                $('#pokemon_template').append(pokemon_data);
+            });
+        });
+    </script>
+</body>
+</html>

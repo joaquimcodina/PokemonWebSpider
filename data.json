@@ -1,0 +1,8 @@
+[
+{"pokedex": "#279", "name": "Pelipper", "type": "Water/Flying", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/pelipper.png"},
+{"pokedex": "#319", "name": "Sharpedo", "type": "Water/Dark", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/sharpedo.png"},
+{"pokedex": "#479", "name": "Rotom", "type": "Electric/Ghost", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/rotom.png"},
+{"pokedex": "#500", "name": "Emboar", "type": "Fire/Fighting", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/emboar.png"},
+{"pokedex": "#649", "name": "Genesect", "type": "Bug/Steel", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/genesect.png"},
+{"pokedex": "#696", "name": "Tyrunt", "type": "Rock/Dragon", "sprite": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/tyrunt.png"}
+]
